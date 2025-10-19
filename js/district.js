@@ -1,0 +1,743 @@
+let region = $('#region');
+let currentRegion = $('#region').val();
+let districtField = $('#district');
+
+let districts = {
+    choose: 'Choose district',
+    andijan: {
+        en: [
+            'Andijan city',
+            'Andijan district',
+            'Asaka district',
+            'Balikchi district',
+            'Boz district',
+            'Bulakbashi district',
+            'Izbaskan district', 
+            'Jalakuduk district',
+            'Marhamat district',
+            'Oltinkol district',
+            'Paxtabad district',
+            'Korgantepa district',
+            'Shakhrikhan district',
+            'Ulugnor district',
+            'Khodjaobad district',
+            'Khanobad city'
+        ],
+        ru: [
+            'г. Андижан',
+            'Андижанский район',
+            'Асакинский район',
+            'Балыкчинский район',
+            'Бозский район',
+            'Булакбашинский район',
+            'Избасканский район', 
+            'Жалакудукский район',
+            'Мархаматский район',
+            'Алтынкульский район',
+            'Пахтаабадский район',
+            'Кургантепинский район',
+            'Шахриханский район',
+            'Улугнорский район',
+            'Ходжаабадский район',
+            'г. Ханабад'
+        ],
+        uz: [
+            'Andijon shahri',
+            'Andijon tumani',
+            'Asaka tumani',
+            'Baliqchi tumani',
+            'Boz tumani',
+            'Buloqboshi tumani',
+            'Izbosgan tumani', 
+            'Jalaquduq tumani',
+            'Marhamat tumani',
+            'Oltinko\'l tumani',
+            'Paxtabad tumani',
+            'Qo\'rg\'ontepa tumani',
+            'Shaxrixon tumani',
+            'Ulug\'nor tumani',
+            'Hodjaobod tumani',
+            'Honobod shahri'
+        ]
+    },
+    bukhara: {
+        en: [
+            'Bukhara city',
+            'Bukhara district',
+            'Kogon city',
+            'Kogon district',
+            'Gijduvon district',
+            'Jondor district',
+            'Olot district',
+            'Peshku district',
+            'Qorakol district',
+            'Qorovulbozor district',
+            'Romitan district',
+            'Shofirkon district',
+            'Vobkent district'
+        ],
+        ru: [
+            'г. Бухара',
+            'Бухарский район',
+            'г. Каган',
+            'Каганский район',
+            'Гиждуванский район',
+            'Жондорский район',
+            'Алатский район',
+            'Пешкунский район',
+            'Каракульский район',
+            'Караулбазарский район',
+            'Ромитанский район',
+            'Шафирканский район',
+            'Вабкентский район'
+        ],
+        uz: [
+            'Buhoro shahri',
+            'Buhoro tumani',
+            'Kogon shahri',
+            'Kogon tumani',
+            'G\'ijduvon tumani',
+            'Jondor tumani',
+            'Olot tumani',
+            'Peshku tumani',
+            'Qorako\'l tumani',
+            'Qorovulbozor tumani',
+            'Romiton tumani',
+            'Shofirkon tumani',
+            'Vobkent tumani'
+        ]
+    }, 
+    fergana: 
+    {
+        en: [
+            'Beshariq district',
+            'Baghdad district',
+            'Buvayda district',
+            'Dangara district',
+            'Fergana city',
+            'Fergana district',
+            'Furqat district',
+            'Margilan city',
+            'Oltiariq district',
+            'Uzbekistan district',
+            'Quqon city',
+            'Kushtepa district',
+            'Kuva district',
+            'Quvasoy city',
+            'Rishton district',
+            'Sokh district',
+            'Tashlak district',
+            'Uchkuprik district',
+            'Yozyovon district'
+        ],
+        ru: [
+            'Бешарыкский район',
+            'Багдадский район',
+            'Бувайдинский район',
+            'Дангаринский район',
+            'г. Фергана',
+            'Ферганский район',
+            'Фуркатский район',
+            'г. Маргилан',
+            'Алтыарыкский район',
+            'Узбекистанский район',
+            'г. Коканд',
+            'Куштепинский район',
+            'Кувинский район',
+            'г. Кувасай',
+            'Риштанский район',
+            'Сохский район',
+            'Ташлакский район',
+            'Учкуприкский район',
+            'Язъяванский район'
+        ],
+        uz: [
+            'Beshariq tumani',
+            'Bog\'dod tumani',
+            'Buvayda tumani',
+            'Dangara tumani',
+            'Farg\'ona shahri',
+            'Farg\'ona tumani',
+            'Furqat tumani',
+            'Marg\'ilon shahri',
+            'Oltiariq tumani',
+            'O\'zbekiston tumani',
+            'Qo\'qon shahri',
+            'Qushtepa tumani',
+            'Quva tumani',
+            'Quvasoy tumani',
+            'Rishton tumani',
+            'Sokh tumani',
+            'Toshloq tumani',
+            'Uchko\'prik tumani',
+            'Yozyovon tumani'
+        ]
+    }, 
+    jizzakh: 
+    {
+        en: [
+            'Arnasay district',
+            'Bakhmal district',
+            'Dustlik district',
+            'Forish district',
+            'Gallaorol district',
+            'Jizzakh city',
+            'Sharaf Rashidov district',
+            'Mirzachul district',
+            'Pakhtakor district',
+            'Yangiabad district',
+            'Zafarobod district',
+            'Zarbdar district',
+            'Zaamin district'
+        ],
+        ru: [
+            'Арнасайский район',
+            'Бахмальский район',
+            'Дустликский район',
+            'Фаришский район',
+            'Галляаральский район',
+            'г. Джизак',
+            'Шараф Рашидовский район',
+            'Мирзачульский район',
+            'Пахтакорский район',
+            'Янгиабадский район',
+            'Зафарабадский район',
+            'Зарбдарский район',
+            'Зааминский район'
+        ],
+        uz: [
+            'Arnasoy tumani',
+            'Bahmal tumani',
+            'Do\'stlik tumani',
+            'Forish tumani',
+            'G\'allaorol tumani',
+            'Jizzax shahri',
+            'Sharof Rashidov tumani',
+            'Mirzacho\'l tumani',
+            'Paxtakor tumani',
+            'Yangiobod tumani',
+            'Zafarobod tumani',
+            'Zarbdor tumani',
+            'Zomin tumani'
+        ]
+    }, 
+    namangan: 
+    {
+        en: [
+            'Chartak district',
+            'Chust district',
+            'Kasansay district',
+            'Mingbulak district',
+            'Namangan city',
+            'Namangan district',
+            'Naryn district',
+            'Pap district',
+            'Turakurgan district',
+            'Uchkurgan district',
+            'Uychi district',
+            'Yangikurgan district'
+        ],
+        ru: [
+            'Чартакский район',
+            'Чустский район',
+            'Касансайский район',
+            'Мингбулакский район',
+            'г. Наманган',
+            'Наманганский район',
+            'Нарынский район',
+            'Папский район',
+            'Туракурганский район',
+            'Учкурганский район',
+            'Уйчинский район',
+            'Янгикурганский район'
+        ],
+        uz: [
+            'Chortoq tumani',
+            'Chust tumani',
+            'Kosonsoy tumani',
+            'Mingbuloq tumani',
+            'Namangan shahri',
+            'Namangan tumani',
+            'Norin tumani',
+            'Pop tumani',
+            'To\'raqo\'rg\'on tumani',
+            'Uchqo\'rg\'on tumani',
+            'Uychi tumani',
+            'Yangiqo\'rg\'on tumani'
+        ]
+    }, 
+    navoiy: 
+    {
+        en: [
+            'Karmana district',
+            'Konimekh district',
+            'Navbakhor district',
+            'Navoiy city',
+            'Navoiy district',
+            'Nurata district',
+            'Kyzyltepa district',
+            'Tamdy district',
+            'Uchkuduk district',
+            'Khatyrchi district',
+            'Zarafshan city'
+        ],
+        ru: [
+            'Карманинский район',
+            'Канимехский район',
+            'Навбахорский район',
+            'г.Навои',
+            'Навоийский район',
+            'Нуратинский район',
+            'Кызылтепинский район',
+            'Тамдынский район',
+            'Учкудукский район',
+            'Хатырчинский район',
+            'г. Зарафшан'
+        ],
+        uz: [
+            'Karmana tumani',
+            'Kanimeh tumani',
+            'Novbahor tumani',
+            'Navoiy shahri',
+            'Navoiy tumani',
+            'Nurota tumani',
+            'Qiziltepa tumani',
+            'Tamdi tumani',
+            'Uchquduq tumani',
+            'Xatirchi tumani',
+            'Zarafshon shahri'
+        ]
+    }, 
+    kashkadarya: 
+    {
+        en: [
+            'Chirakchi district',
+            'Dehkanabad district',
+            'Guzar district',
+            'Kasby district',
+            'Kitob district',
+            'Koson district',
+            'Mirishkar district',
+            'Muborak district',
+            'Nishon district',
+            'Kamashi district',
+            'Karshi city',
+            'Karshi district',
+            'Shakhrisabz city',
+            'Shakhrisabz district',
+            'Yakkabog district'
+        ],
+        ru: [
+            'Чиракчинский район',
+            'Дехканабадский район',
+            'Гузарский район',
+            'Касбинский район',
+            'Китабский район',
+            'Koson district',
+            'Миришкорский район',
+            'Мубарекский район',
+            'Нишанский район',
+            'Камашинский район',
+            'г. Карши',
+            'Каршинский район',
+            'г. Шахрисабз',
+            'Шахрисабзский район',
+            'Яккабагский район'
+        ],
+        uz: [
+            'Chiroqchi tumani',
+            'Dehqonobod tumani',
+            'Guzar tumani',
+            'Kasbi tumani',
+            'Kitob tumani',
+            'Koson tumani',
+            'Mirishkor tumani',
+            'Muborak tumani',
+            'Nishon tumani',
+            'Qamashi tumani',
+            'Qarshi shahri',
+            'Qarshi tumani',
+            'Shaxrisabz shahri',
+            'Shaxrisabz tumani',
+            'Yakkabog\' tumani' 
+        ]
+    },
+    therepublicofkarakalpakstan: 
+    {
+        en: [
+            'Amudarya district',
+            'Beruniy district',
+            'Chimbay district',
+            'Ellikqala district',
+            'Kegeyli district',
+            'Muynoq district',
+            'Nukus city',
+            'Nukus district',
+            'Kanlykul district',
+            'Kungrad district',
+            'Karauzyak district',
+            'Shumanai district',
+            'Takhtakupyr district',
+            'Taxiatosh city',
+            'Turtkul district',
+            'Hujayli district',
+            'Buzatov district'
+        ],
+        ru: [
+            'Амударьинский район',
+            'Берунийский район',
+            'Чимбайский район',
+            'Элликкалинский район',
+            'Кегейлийский район',
+            'Муйнакский район',
+            'г. Нукус',
+            'Нукусский район',
+            'Канлыкульский район',
+            'Кунградский район',
+            'Караузякский район',
+            'Шуманайский район',
+            'Тахтакупырский район',
+            'Тахиаташский район',
+            'Турткульский район',
+            'Ходжейлийнский район',
+            'Бозатауский район'
+        ],
+        uz: [
+            'Amudaryo tumani',
+            'Beruniy tumani',
+            'Chimboy tumani',
+            'Ellikqala tumani',
+            'Kegeyli tumani',
+            'Muynoq tumani',
+            'Nukus shahri',
+            'Nukus tumani',
+            'Kanliko\'l tumani',
+            'Qo\'ng\'rot tumani',
+            'Qorauzyak tumani',
+            'Shumanay tumani',
+            'Taxtakupir tumani',
+            'Taxiatosh shahri',
+            'To\'rtko\'l tumani',
+            'Xo\'jayli tumani',
+            'Buzatov tumani'  
+        ]
+    },
+    samarkand: 
+    {
+        en: [
+            'Bulungur district',
+            'Ishtikhan district',
+            'Jambay district',
+            'Kattakurgan city',
+            'Kattakurgan district',
+            'Narpay district',
+            'Nurobod district',
+            'Okdarya district',
+            'Pastdargom district',
+            'Pakhtachi district',
+            'Payariq district',
+            'Koshrabot district',
+            'Samarkand city',
+            'Samarkand district',
+            'Taylak district',
+            'Urgut district'
+        ],
+        ru: [
+            'Булунгурский район',
+            'Иштыханский район',
+            'Джамбайский район',
+            'г. Каттакурган',
+            'Каттакурганский район',
+            'Нарпайский район',
+            'Нурабадский район',
+            'Акдарьинский район',
+            'Пастдаргомский район',
+            'Пахтачийский район',
+            'Пайарыкский район',
+            'Кошрабадский район',
+            'г. Самарканд',
+            'Самаркандский район',
+            'Тайлякский район',
+            'Ургутский район'
+        ],
+        uz: [
+            'Buluing\'ur tumani',
+            'Ishtixon tumani',
+            'Jomboy tumani',
+            'Kattaqo\'rg\'on shahri',
+            'Kattaqo\'rg\'on tumani',
+            'Narpay tumani',
+            'Nurobod tumani',
+            'Oqdaryo tumani',
+            'Pastdargom tumani',
+            'Paxtachi tumani',
+            'Payariq tumani',
+            'Qoshrabot tumani',
+            'Samarqand shahri',
+            'Samarqand tumani',
+            'Toyloq tumani', 
+            'Urgut tumani'  
+        ]
+    },  
+    syrdarya: 
+    {
+        en: [
+            'Bayavut district',
+            'Gulistan city',
+            'Gulistan district',
+            'Mirzaabad district',
+            'Oqoltin district',
+            'Sayhanabad district',
+            'Shirin city',
+            'Sardoba district',
+            'Sirdaryo district',
+            'Khavast district',
+            'Yangiyer city'
+        ],
+        ru: [
+            'Баяутский район',
+            'г. Гулистан',
+            'Гулистанский район',
+            'Мирзаабадский район',
+            'Акалтынский район',
+            'Сайхунабадский район',
+            'г. Ширин',
+            'Сардобинский район',
+            'Сырдарьинский район',
+            'Хавастский район',
+            'г. Янгиер'
+        ],
+        uz: [
+            'Bayavut tumani',
+            'Guliston shahri',
+            'Guliston tumani',
+            'Mirzaobod tumani',
+            'Oqoltin tumani',
+            'Sayhanobod tumani',
+            'Shirin shahri',
+            'Sardoba tumani',
+            'Sirdaryo tumani',
+            'Havast tumani',
+            'Yangiyer shahri'
+        ]
+    },  
+    surkhandarya: 
+    {
+        en: [
+            'Angora district',
+            'Boysun district',
+            'Denov district',
+            'Jarkurrgan district',
+            'Muzrabot district',
+            'Altinsay district',
+            'Kyziryq district',
+            'Qumkurgan district',
+            'Sariosiyo district',
+            'Sherobod district',
+            'Shurchi district',
+            'Termiz city',
+            'Termiz district',
+            'Uzun district'
+        ],
+        ru: [
+            'Ангорский район',
+            'Байсунский район',
+            'Денауский район',
+            'Джаркурганский район',
+            'Музрабадский район',
+            'Алтынсайский район',
+            'Кизирикский район',
+            'Кумкурганский район',
+            'Сариасийский район',
+            'Шерабадский район',
+            'Шурчинский район',
+            'г. Термез',
+            'Термезский район',
+            'Узунский район'
+        ],
+        uz: [
+            'Angora tumani',
+            'Boysun tumani',
+            'Denov tumani',
+            'Jarqo\'rg\'on tumani',
+            'Muzrabot tumani',
+            'Oltinsoy tumani',
+            'Qiziriq tumani',
+            'Qumqo\'rg\'on tumani',
+            'Sariosiyo tumani',
+            'Sherobod tumani',
+            'Sho\'rchi tumani',
+            'Termiz shahri ',
+            'Termiz tumani',
+            'Uzun tumani'
+        ]
+    },  
+    tashkent: 
+    {
+        en: [
+            'Angren city',
+            'Bekobod city',
+            'Bekobod district',
+            'Buka district',
+            'Bostanlik district',
+            'Chinaz district',
+            'Chirchiq city',
+            'Ohangaron district',
+            'Olmaliq city',
+            'Akkurgan district',
+            'Ortachirchiq district',
+            'Parkent district',
+            'Piskent district',
+            'Kibrai district',
+            'Quyichirchik district',
+            'Yangiyul district',
+            'Yuqorichirchik district',
+            'Zangiota district'
+        ],
+        ru: [
+            'г. Ангрен',
+            'г. Бекабад',
+            'Бекабадский район',
+            'Букинский район',
+            'Бостанлыкский район',
+            'Чиназский район',
+            'г. Чирчик',
+            'Ахангаранский район',
+            'г. Алмалык',
+            'Аккурганский район',
+            'Уртачирчикский район',
+            'Паркентский район',
+            'Пскентский район',
+            'Кибрайский район',
+            'Куйичирчикский район',
+            'Янгиюльский район',
+            'Юкоричирчикский район',
+            'Зангиатинский район'
+        ],
+        uz: [
+            'Angren shahri',
+            'Bekobod shahri',
+            'Bekobod tumani',
+            'Bo\'ka tumani',
+            'Bostonliq tumani',
+            'Chinoz tumani',
+            'Chirchiq shahri',
+            'Ohangaron tumani',
+            'Olmaliq shahri',
+            'Oqqo\'rg\'on tumani',
+            'O\'rtachirchiq tumani',
+            'Parkent tumani',
+            'Piskent tumani',
+            'Qibray tumani',
+            'Quyichirchiq tumani',
+            'Yangiyo\'l tumani',
+            'Yuqorichirchiq tumani',
+            'Zangiota tumani'
+        ]
+    },
+    toshkentcity: 
+    {
+        en: [
+            'Bektemir district',
+            'Chilonzor district',
+            'Mirobod district',
+            'Mirzo Ulug\'bek district',
+            'Sergeli district',
+            'Shaykhantahur district',
+            'Olmazor district',
+            'Uchtepa district',
+            'Yakkasaroy district',
+            'Yashnobod district',
+            'Yunusobod district'
+        ],
+        ru: [
+            'Бектемирский район',
+            'Чиланзарский район',
+            'Мирабадский район',
+            'Мирзо-Улугбекский район',
+            'Сергелийский район',
+            'Шайхантахурский район',
+            'Алмазарский район',
+            'Учтепинский район',
+            'Яккасарайский район',
+            'Яшнабадский район',
+            'Юнусабадский район'
+        ],
+        uz: [
+            'Bektemir tumani',
+            'Chilonzor tumani',
+            'Mirobod tumani',
+            'Mirzo Ulug\'bek tumani',
+            'Sergeli tumani',
+            'Shayxontohur tumani',
+            'Olmazor tumani',
+            'Uchtepa tumani',
+            'Yakkasaroy tumani',
+            'Yashnobod tumani',
+            'Yunusobod tumani'
+        ]
+    },
+    khorezm: 
+    {
+        en: [
+            'Bogot district',
+            'Gurlan district',
+            'Hazorasp district',
+            'Kushkupir district',
+            'Shovot district',
+            'Urganch city',
+            'Urganch district',
+            'Khiva city',
+            'Khiva district',
+            'Honka district',
+            'Yangiariq district',
+            'Yangibozor district'
+        ],
+        ru: [
+            'Багатский район',
+            'Гурленский район',
+            'Хазараспский район',
+            'Кошкупырский район',
+            'Шаватский район',
+            'г. Ургенч',
+            'Ургенчский район',
+            'г. Хива',
+            'Хивинский район',
+            'Ханкинский район',
+            'Янгиарыкский район',
+            'Янгибазарский район'
+        ],
+        uz: [
+            'Bogot tumani',
+            'Gurlan tumani',
+            'Hazorasp tumani',
+            'Qoshko\'pir tumani',
+            'Shovot tumani',
+            'Urganch shahri',
+            'Urganch tumani',
+            'Xiva shahri',
+            'Xiva tumani',
+            'Honka tumani',
+            'Yangiariq tumani',
+            'Yangibozor tumani' 
+        ]
+    },
+};
+
+region.on('change', function() {
+    districtField.html('');
+    currentRegion = $(this).val();
+    currentRegion = currentRegion.toLowerCase().replace(' ', '').replace('region', '');
+    currentDistricts = districts[currentRegion][lang];
+
+    for (let i = 0; i < currentDistricts.length; i++) {
+        districtField.append(
+            $("<option></option>").text(currentDistricts[i])
+                                  .attr({
+                                      class: 'region-option', 
+                                      value: currentDistricts[i]
+                                  })
+        );
+    }
+
+});
