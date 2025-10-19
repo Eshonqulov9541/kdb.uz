@@ -1,0 +1,22 @@
+.breadcrumb-custom {
+	background-image: url('../../img/corporates/crm/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+@media (min-width: 992px) {
+	.crm .align-right {
+		float: right;
+		width: 50% !important;
+		height: auto;
+		margin-left: 16px
+	}
+}

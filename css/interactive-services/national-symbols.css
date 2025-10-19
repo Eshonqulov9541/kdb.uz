@@ -1,0 +1,98 @@
+.breadcrumb-custom {
+    background-image: url('../../img/interactive-services/national-symbols/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.national-symbols {
+    margin-top: 48px
+}
+
+.national-symbols .box {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    margin-bottom: 24px
+}
+
+.national-symbols .box .title-parent {
+    display: -ms-grid;
+    display: grid;
+    min-height: 250px;
+    padding: 12px
+}
+
+.national-symbols .box .title-parent h2 {
+    width: 350px;
+    margin: auto
+}
+
+.national-symbols .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.national-symbols .first-parent .flag-icon {
+    font-size: 48px;
+    color: #FFC409;
+    margin: 0 24px 0 0
+}
+
+.national-symbols .first-parent .main-paragraph {
+    font: 400 calc(14rem / 16)/calc(24rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    margin-bottom: 24px
+}
+
+.national-symbols .first-parent b {
+    font: 700 calc(14rem / 16)/calc(24rem / 16) 'Roboto', sans-serif;
+    display: block
+}
+
+.national-symbols .first-parent audio {
+    display: none
+}
+
+.national-symbols .first-parent .play {
+    background-color: #FFC409;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    float: right
+}
+
+.national-symbols .first-parent .play i {
+    font-size: calc(12rem / 16)
+}
+
+.national-symbols .first-parent .anthem-paragraph {
+    font: 400 calc(14rem / 16)/calc(20rem / 16) 'Roboto', sans-serif;
+    color: #434343
+}
+
+@media(max-width:991px) {
+    .national-symbols .box .title-parent h2 {
+        width: 100%;
+        text-align: center
+    }
+}
+
+@media(max-width:575px) {
+    .national-symbols .first-parent .play {
+        float: left;
+        margin-top: 24px
+    }
+}

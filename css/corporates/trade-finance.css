@@ -1,0 +1,154 @@
+.breadcrumb-custom {
+	background-image: url('../../img/corporates/trade-finance/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.trade-finance {
+	margin-top: 48px
+}
+
+.trade-finance .main-hero {
+	color: #434343
+}
+
+.trade-finance .main-hero h2 {
+	margin-bottom: 8px;
+	color: black
+}
+
+.trade-finance .main-hero p {
+	margin-bottom: 24px
+}
+
+.trade-finance .main-hero figure {
+	border: 1px solid #BFCCDF;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+
+.trade-finance .main-hero figcaption {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 20px 24px;
+	height: 100%
+}
+
+.trade-finance .main-hero figcaption span {
+	color: #262626;
+	font: 500 calc(16rem / 16) 'Roboto', sans-serif
+}
+
+.trade-finance .main-hero figcaption img {
+	padding-right: 16px
+}
+
+.trade-finance .email-card-title {
+	font-weight: 700;
+	margin-bottom: 24px;
+	display: block
+}
+
+.trade-finance .main-hero .email a {
+	color: #073E75
+}
+
+.trade-finance .credit {
+	margin-bottom: 48px
+}
+
+.trade-finance .credit p span,
+.trade-finance .credit p.bold {
+	font-weight: bold
+}
+
+.trade-finance .credit ul li {
+	font: 400 calc(14rem / 16) 'Roboto', sans-serif;
+	color: #434343;
+	margin-bottom: 24px
+}
+
+.trade-finance .letters-credit .row .small-paragraph {
+	border: 1px solid #BFCCDF;
+	height: 100%;
+	width: 100%;
+	padding: 24px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+@media (min-width:992px) {
+	.trade-finance .main-hero  [class*="col-"] {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch
+	}
+
+	.trade-finance .align-right {
+		float: right;
+		width: 50% !important;
+		height: auto;
+		margin-left: 16px
+	}
+
+}
+
+@media (max-width:992px) {
+	.trade-finance .main-hero  [class*="col-"] {
+		margin-bottom: 24px
+	}
+
+	.trade-finance .main-hero figcaption {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		padding: 26px 24px
+	}
+
+	.trade-finance .main-hero figcaption span {
+		font: 500 calc(22rem / 16) 'Roboto', sans-serif
+	}
+
+}
+
+@media (max-width:768px) {
+	.trade-finance .main-hero figcaption span {
+		font: 500 calc(18rem / 16) 'Roboto', sans-serif
+	}
+
+}
+
+@media (max-width:400px) {
+	.trade-finance .main-hero figcaption span {
+		font: 500 16px 'Roboto', sans-serif
+	}
+
+	.trade-finance .main-hero figcaption {
+		padding: 16px
+	}
+
+}

@@ -1,0 +1,97 @@
+.share-information .item {
+    background-color: white;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    padding: 18px 24px;
+    border-left: 3px solid #FFC409;
+    margin-bottom: 16px;
+    width: 100%
+}
+
+.breadcrumb-custom {
+    background-image: url('../../img/investors/share-information/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.share-information .money-numbers {
+    color: #FFC409
+}
+
+.share-information .item .main {
+    font: 500 calc(14rem / 16) 'Roboto', sans-serif;
+    color: #073E75
+}
+
+.share-information .item p {
+    margin: 0
+}
+
+.share-information .item p.license {
+    margin: 0 0 16px 0
+}
+
+.share-information .item a {
+    text-decoration: none;
+    font: 400 calc(14rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    display: block
+}
+
+.share-information .item img {
+    width: 100%;
+    height: auto
+}
+
+.share-information table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap
+}
+
+table::-webkit-scrollbar {
+    height: 8px
+}
+
+table::-webkit-scrollbar-thumb {
+    background: #073E75
+}
+
+.share-information table th,
+.share-information table td {
+    border: 1px solid #BFCCDF;
+    padding: 18px 24px
+}
+
+.share-information table th:nth-child(1) {
+    min-width: 80px;
+    text-align: center
+}
+
+.share-information table th:nth-child(2) {
+    min-width: 200px;
+    text-align: center
+}
+
+.share-information table th:nth-child(3) {
+    min-width: 200px;
+    text-align: center
+}
+
+.share-information table th:nth-child(4) {
+    min-width: 200px;
+    text-align: center
+}
+
+.share-information table th:nth-child(5) {
+    min-width: 200px;
+    text-align: center
+}

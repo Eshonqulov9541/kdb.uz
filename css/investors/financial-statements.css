@@ -1,0 +1,56 @@
+.breadcrumb-custom {
+    background-image: url('../../img/investors/financial-statements/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.financial-statements .align-right {
+    float: right;
+    width: 50% !important;
+    height: auto;
+    margin-left: 16px
+}
+
+.financial-statements .clear-fix {
+    margin-bottom: 48px
+}
+
+.financial-statements .clear-fix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.financial-statements {
+    margin-top: 48px
+}
+
+.financial-statements .main-hero .main-hero-inner .img-cover {
+    margin-bottom: 20px;
+    height: auto
+}
+
+.financial-statements .main-hero h3 {
+    color: #073E75;
+    margin-bottom: 16px
+}
+
+.financial-statements .main-hero p {
+    padding-right: 16px;
+    margin-bottom: 24px;
+    color: #828282
+}
+
+@media (max-width:768px) {
+    .financial-statements .align-right {
+        width: 100% !important;
+        padding-bottom: 24px
+    }
+}
+
+@media (max-width:576px) {
+    .financial-statements .main-hero .main-hero-inner .img-cover {
+        margin-bottom: 20px;
+        min-height: 100px
+    }
+}

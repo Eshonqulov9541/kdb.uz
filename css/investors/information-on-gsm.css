@@ -1,0 +1,94 @@
+.breadcrumb-custom {
+	background-image: url('../../img/investors/information-on-gsm/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.information-on-gsm .information-gsm-item {
+	position: relative;
+	-webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+	margin-bottom: 48px;
+	padding: 24px;
+	font-family: 'Roboto',sans-serif
+}
+
+.information-on-gsm .information-gsm-item::before {
+	content: "";
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #FFC409
+}
+
+.information-on-gsm .gsm-month span.date {
+	display: block;
+	font-size: calc(80rem / 16);
+	color: #073E75;
+	line-height: 88px
+}
+
+.information-on-gsm .gsm-month span.month {
+	color: #434343
+}
+
+.information-on-gsm .gsm-month p {
+	color: #262626
+}
+
+.information-on-gsm .gsm-location-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline
+}
+
+.information-on-gsm .gsm-location-item span {
+	margin-right: 16px
+}
+
+.information-on-gsm .gsm-pagination a {
+	color: #073E75;
+	float: left;
+	padding: 16px 23px;
+	text-decoration: none;
+	-webkit-transition: background-color .3s;
+	-o-transition: background-color .3s;
+	transition: background-color .3s;
+	font-weight: 500;
+	border: 1px solid #BFCCDF
+}
+
+.information-on-gsm .gsm-pagination a.active {
+	background-color: #073E75;
+	color: #fff;
+	border: 1px solid #073E75
+}
+
+.information-on-gsm .gsm-pagination a:hover:not(.active) {
+	background-color: #f2f2f2;
+	color: #434343
+}
+.information-on-gsm .event-link {
+	text-decoration: none;
+}
+
+.information-on-gsm .event-link:hover h3 {
+	color: #073E75;
+}
+
+.event-link span, .event-link p, .event-link h3 {
+	color: #262626;
+}

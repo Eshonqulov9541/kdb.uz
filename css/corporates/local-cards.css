@@ -1,0 +1,52 @@
+.breadcrumb-custom {
+    background-image: url('../../img/corporates/local-cards/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color:white
+}
+
+.breadcrumb-custom a {
+    color: white
+}
+
+.local-cards {
+    margin-top: 48px
+}
+
+.local-cards .card-cards {
+    padding: 24px;
+    background: #fff;
+    -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in
+}
+
+.local-cards .card-cards .img {
+    width: 100%;
+    height: auto
+}
+
+.local-cards .card-link {
+    text-decoration: none;
+    color: #262626
+}
+
+.local-cards .card-cards:hover {
+    background-image: url('../../img/corporates/local-cards/card-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    cursor: pointer
+}
+
+@media (max-width:768px) {
+    .local-cards .card-cards {
+        padding: 16px
+    }
+}

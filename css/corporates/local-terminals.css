@@ -1,0 +1,26 @@
+.breadcrumb-custom {
+	background-image: url('../../img/corporates/local-terminals/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.local-terminals {
+	margin-top: 48px
+}
+
+.local-terminals p {
+	color: #434343;
+	margin: 48px 0 0 0
+}
+
+.local-terminals .simple-card {
+	padding: 48px 24px;
+}

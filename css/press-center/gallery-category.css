@@ -1,0 +1,38 @@
+/* Gallery Starts -----*/
+.breadcrumb-custom {
+	background-image: url('../../img/press-center/gallery-category/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.breadcrumb-custom {
+	color: white;
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5;
+}
+
+.gallery-category {
+	margin-top: 48px;
+}
+
+.gallery-category .box {
+       box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+       padding: 24px 16px;
+       width: 100%;
+}
+
+.gallery-category .box  a {
+	text-decoration: none;
+}
+
+.gallery-category .box  a h3 {
+	text-decoration: none;
+	font: 500 24px/40px 'Roboto',
+	sans-serif;
+	color: #073E75;
+	text-align: center;
+	margin: 0;
+}
+/* Gallery Ends -----*/

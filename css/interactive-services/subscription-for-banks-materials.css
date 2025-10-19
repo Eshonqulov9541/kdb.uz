@@ -1,0 +1,71 @@
+.breadcrumb-custom {
+	background-image: url('../../img/interactive-services/subscription-for-banks-materials/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.subscription-for-banks-materials {
+	margin-top: 48px
+}
+
+.subscription-for-banks-materials  .parent-1 .item {
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	padding: 24px
+}
+
+.subscription-for-banks-materials  .parent-1 .item h2 {
+	margin: 0 0 24px
+}
+
+.subscription-for-banks-materials  .parent-1 .item .helper {
+	font: 300 calc(12rem / 16)/calc(20rem / 16) 'Roboto', sans-serif;
+	color: #434343;
+	margin: 0 0 50px
+}
+
+.subscription-for-banks-materials  .parent-1 .item label {
+	font: 400 calc(14rem / 16)/calc(24rem / 16) 'Roboto', sans-serif;
+	color: #434343
+}
+
+.subscription-for-banks-materials  .parent-1 .item .email {
+	width: 100%;
+	border: 1px solid #BFCCDF;
+	padding: 18px 16px;
+	font: 400 calc(14rem / 16) 'Roboto', sans-serif;
+	color: #434343
+}
+
+.subscription-for-banks-materials  .parent-1 .item .email:focus {
+	outline: none
+}
+
+.subscription-for-banks-materials  .parent-1 .item button {
+	margin: 24px 0 0
+}
+
+
+.success-message .global-modal-window {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.success-message .global-modal-content {
+     max-width: 800px;
+     padding: 48px 32px;
+     transform: translateY(-24px);
+}
+
+.success-message .modal-content-inner {
+     background-color: white;
+}

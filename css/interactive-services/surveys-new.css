@@ -1,0 +1,188 @@
+/********************FARSTYLE******************/
+.breadcrumb-custom {
+    background-image: url("../../img/interactive-services/surveys/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.mt-4 .farstyle {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    padding: 24px;
+    margin: 0 0 24px;
+}
+
+.farstyle .input-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 24px 0 0px;
+}
+
+.farstyle_text {
+    color: #707070;
+    margin-bottom: 30px;
+}
+
+label {
+    position: relative;
+    cursor: pointer;
+    font: 400 calc(14rem / 16)/calc(20rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    margin-left: 40px;
+}
+
+input {
+    display: none;
+}
+
+label:before {
+    position: absolute;
+    left: -40px;
+    content: '';
+    -webkit-appearance: none;
+    /*background-color: #FFC409;*/
+    background-color: transparent;
+    border: 2px solid #FFC409;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    margin-right: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.farstyle button {
+    margin: 24px 0 0;
+}
+
+input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: -36px;
+    border: solid #fff;
+    /*border: solid #FFC409;*/
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 6px;
+    height: 12px;
+}
+
+.farstyling .nav-link.active {
+    color: #434343;
+    font-weight: 600;
+}
+
+.farstyling .nav-link {
+    color: #BFBFBF;
+    font-weight: 600;
+}
+
+.farstyle_title {
+    margin-bottom: 15px;
+}
+
+.farstyle_col-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.farstyle_text {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.input-parent > input + .input-parent > label:after {
+    border: solid #fff !important;
+}
+
+.input-parent > input + .input-parent > label:before {
+    background-color: #FFC409 !important;
+}
+
+input:checked + label:before {
+    background-color: #FFC409;
+}
+
+.farstyle_col-2 {
+    margin-left: 10px;
+}
+
+.headage {
+    margin-top: 10px;
+}
+
+.input-parent {
+    margin-top: 10px !important;
+}
+
+.farstyle_form {
+
+}
+
+.farstyle_textarea {
+    width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #BFCCDF;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footertext {
+    margin-top: 60px;
+}
+
+.h3text {
+    margin-bottom: 20px;
+}
+
+.investap2 .input-parent {
+    width: 90%;
+}
+
+.heading-4 {
+    margin-bottom: 21px;
+}
+
+
+.ic_surveys input[type='radio'] {
+    display: block;
+    opacity: 0;
+    z-index: -2;
+    width: 1px;
+}
+
+/*******ADAPTIVE********/
+
+@media screen and (max-width: 480px) {
+    label:before {
+        margin-right: 15px;
+    }
+
+    .farstyle .input-parent {
+        width: 100%;
+    }
+
+    .nav-tabs .nav-item {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .farstyling .nav-link {
+        font-size: 19px;
+        font-weight: 500;
+    }
+}

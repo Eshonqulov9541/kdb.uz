@@ -1,0 +1,27 @@
+.breadcrumb-custom {
+	background-image: url('../../../img/individuals/remote-banking/internet-banking/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.internet-banking .simple-card {
+	padding: 24px;
+	background: #fff;
+	-webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.internet-banking .simple-card i {
+	color: #FFCD29
+}

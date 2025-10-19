@@ -1,0 +1,108 @@
+.breadcrumb-custom {
+    background-image: url('../../img/about-us/committees/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.committees {
+    margin-top: 48px
+}
+
+.committees .main-hero .paragrapgh {
+    color: rgba(67, 67, 67, 0.87)
+}
+
+.committees .main-hero p {
+    font-weight: 500 !important;
+    color: rgba(67, 67, 67, 0.87)
+}
+
+.committees .main-hero button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    padding: 22px 24px 24px 24px;
+    background-color: white;
+    margin-top: 16px;
+    position: relative;
+    color: rgba(67, 67, 67, 0.87);
+    text-align: left
+}
+
+.committees .main-hero button span {
+    font: 500 calc(16rem / 16) 'Roboto',
+    sans-serif;
+    color: rgba(67, 67, 67, 0.87)
+}
+
+.committees .main-hero button i {
+    padding-left: 8px
+}
+
+.committees .main-hero button:before,
+.committees .main-hero .card-body:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #FFC409
+}
+
+.committees .main-hero button:focus {
+    outline: none
+}
+
+.committees .main-hero .card {
+    background-color: white
+}
+
+.committees .main-hero .card-body {
+    padding: 20px 22.5px 20px 48px;
+    border: none;
+    border-radius: 0;
+    position: relative
+}
+
+.shadow {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16)
+}
+
+.shadow .small-paragraph {
+    text-align: justify
+}
+
+ul.right-icon li p::before {
+    left: 48px
+}
+
+button i {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+button[aria-expanded="true"] i {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+@media (max-width:576px) {
+    .committees .main-hero .card-body {
+        padding: 16px 16px 16px 32px
+    }
+}

@@ -1,0 +1,24 @@
+.breadcrumb-custom {
+    background-image: url('../../img/corporates/single-local-card/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.single-local-card .card-cards {
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in
+}
+
+.single-local-card .card-cards .img {
+    width: 100%;
+    height: auto
+}

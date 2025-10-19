@@ -1,0 +1,90 @@
+.breadcrumb-custom {
+	background-image: url('../../../img/individuals/exchange-office/currency-conversion/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.currency-conversion .conversion-card {
+	padding: 24px;
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 992px) {
+	.currency-conversion .conversion-card {
+		padding: 16px;
+	}
+}
+
+.currency-conversion .conversion-card input, .currency-conversion .conversion-card select {
+	display: block;
+	width: 100%;
+	border: 2px solid #BFCCDF;
+	font: 400 14px/20px 'Roboto',
+	sans-serif;
+	color: #262626;
+	letter-spacing: 1.25px;
+	padding: 12px 16px;
+}
+
+.currency-conversion .conversion-card input::placeholder, .currency-conversion .conversion-card select::placeholder {
+	color: rgba(0, 0, 0, .5);
+}
+
+.currency-conversion #result {
+	width: 100%;
+	height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	border: none;
+	background-color: #80b7cb;
+    font-size: 1.25rem;
+	color: white;
+	text-align: center;
+}
+
+.currency-conversion .from, .currency-conversion .to {
+	width: 40%;
+}
+
+.currency-conversion .icon {
+	cursor: pointer;
+}
+
+.currency-conversion .rate-switcher {
+	list-style-type: none;
+	display: flex;
+}
+
+.currency-conversion .rate-switcher .item {
+	padding: 12px 28px;
+	border: 1px solid #BFCCDF;
+	text-decoration: none;
+}
+.currency-conversion .rate-switcher .item.active {
+	border: 1px solid #073E75;
+	background: #073E75;
+	color: white;
+}
+
+.currency-conversion .nav-tabs {
+	overflow: visible;
+	border: none;
+}
+
+.currency-conversion th, .currency-conversion td {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.nav-tabs::after {
+	display: none;
+}

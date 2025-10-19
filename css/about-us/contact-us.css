@@ -1,0 +1,178 @@
+.breadcrumb-custom {
+    background-image: url('../../img/about-us/contact-us/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.contact-us {
+    margin-top: 48px
+}
+
+.contact-us .nav-tabs {
+    border-bottom: none
+}
+
+.contact-us .row {
+    margin: 0
+}
+
+.contact-us .client-services {
+    margin-bottom: 48px
+}
+
+.contact-us .client-services:last-child {
+    margin-bottom: 0
+}
+
+.contact-us .client-services h2 {
+    margin-bottom: 24px
+}
+
+.contact-us .client-services ul {
+    padding: 0;
+    margin-bottom: 0
+}
+
+.contact-us .client-services ul li {
+    display: inline-block;
+    padding: 0 14px 0px 14px
+}
+
+.contact-us .client-services ul li a {
+    font: 500 calc(16rem / 16) 'Roboto',
+    sans-serif;
+    color: #D9D9D9;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-right: 60px
+}
+
+.contact-us .client-services ul li a.active {
+    color: #262626;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #FFC409
+}
+
+.contact-us .client-services ul li a:hover {
+    color: #262626
+}
+
+.contact-us .client-services .parent {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16)
+}
+
+.contact-us .client-services .extra-parent {
+    padding: 32px 16px 32px 0
+}
+
+.contact-us .client-services .parent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+}
+
+.contact-us .client-services .parent .category-name {
+    font: 500 calc(14rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    margin-bottom: 30px
+}
+
+.contact-us .client-services .parent .heading-blue {
+    font: 500 calc(14rem / 16) 'Roboto', sans-serif;
+    color: #073E75;
+    margin-bottom: 22px
+}
+
+.contact-us .client-services .parent .link {
+    font: 300 calc(14rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 22px
+}
+
+.contact-us .client-services .parent .helper-text {
+    color: #434343;
+    font: 300 calc(14rem / 16) 'Roboto', sans-serif;
+    margin-bottom: 22px
+}
+
+.contact-us .client-services .general-information {
+    padding: 48px
+}
+
+.contact-us .client-services .mini-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.contact-us .client-services .mini-item.first {
+    margin-bottom: 32px
+}
+
+.contact-us .client-services .mini-item i {
+    font-size: calc(16rem / 16);
+    color: #FFC409;
+    margin-right: 12px
+}
+
+.contact-us .client-services .mini-item h5 {
+    font: 500 calc(16rem / 16) 'Roboto', sans-serif;
+    color: #262626;
+    margin-bottom: 10px
+}
+
+.contact-us .client-services .mini-item a {
+    font: 300 calc(14rem / 16)/calc(16rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    text-decoration: none
+}
+
+.contact-us .client-services .mini-item p {
+    font: 300 calc(14rem / 16)/calc(16rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    margin-bottom: 0
+}
+
+@media(max-width:1199px) {
+    .contact-us .client-services .parent .item-1, .contact-us .client-services .parent .item-2, .contact-us .client-services .parent .item-3, .contact-us .client-services .parent .item-4 {
+        padding-left: 16px
+    }
+}
+
+@media(max-width:991px) {
+    .contact-us .client-services .extra-parent {
+        padding: 32px 16px 32px 16px
+    }
+    .contact-us .client-services ul li {
+        padding-bottom: 24px
+    }
+    .contact-us .client-services ul li {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0
+    }
+    .contact-us .client-services .parent .item-1, .contact-us .client-services .parent .item-2, .contact-us .client-services .parent .item-3, .contact-us .client-services .parent .item-4 {
+        padding-left: 0;
+        margin-top: 16px
+    }
+    .contact-us .client-services .general-information {
+        padding: 32px
+    }
+}
+
+@media(max-width:767px) {
+    .contact-us .client-services .mini-item.second {
+        margin-bottom: 32px
+    }
+    .contact-us .client-services .general-information {
+        padding: 24px
+    }
+}

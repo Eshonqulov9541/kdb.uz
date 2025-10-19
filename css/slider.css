@@ -1,0 +1,280 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.slide-index{
+    z-index: 0;
+}
+.slide-index .s--active{
+    z-index: 5;
+}
+.slider-index {
+    position: relative;
+    height: 100%;
+}
+.slider__slides {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.slider__control--right {
+    left: 95%;
+}
+.slider__control:hover {
+    background-color: #2da6ff;
+}
+.slider__control-line {
+    position: absolute;
+    left: 23px;
+    top: 50%;
+    width: 3px;
+    height: 14px;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.slider__control-line:nth-child(2) {
+    -webkit-transform: translateY(1px) rotate(-135deg);
+    transform: translateY(1px) rotate(-135deg);
+}
+.slider__control--right .slider__control-line {
+    left: 37px;
+    -webkit-transform-origin: 1px 0;
+    transform-origin: 1px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.slider__control--right .slider__control-line:nth-child(2) {
+    -webkit-transform: translateY(1px) rotate(135deg);
+    transform: translateY(1px) rotate(135deg);
+}
+.slider__control-line:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e2e2e2;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+.slider__control:hover .slider__control-line:after {
+    background-color: #fff;
+}
+.slider__control.a--rotation .slider__control-line:after {
+    -webkit-animation: arrowLineRotation 0.49s;
+    animation: arrowLineRotation 0.49s;
+}
+.slider__control.a--rotation .slider__control-line:nth-child(1):after {
+    -webkit-animation: arrowLineRotationRev 0.49s;
+    animation: arrowLineRotationRev 0.49s;
+}
+
+@-webkit-keyframes arrowLineRotation {
+    to {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes arrowLineRotation {
+    to {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes arrowLineRotationRev {
+    to {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+}
+@keyframes arrowLineRotationRev {
+    to {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+}
+.slide-index {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 150vmax;
+    height: 100%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-transition: -webkit-clip-path 0s 1s;
+    transition: clip-path 0s 1s, -webkit-clip-path 0s 1s;
+    -webkit-clip-path: circle(30px at 170vw 70%);
+    clip-path: circle(30px at 170vw 70%);
+}
+.slide-index.s--prev {
+    -webkit-clip-path: circle(30px at 10vw 70%);
+    clip-path: circle(30px at 10vw 70%);
+}
+.slide-index.s--active {
+    z-index: 1;
+    -webkit-transition: -webkit-clip-path 1.5s;
+    transition: clip-path 1s, -webkit-clip-path 1.5s;
+    -webkit-clip-path: circle(120vmax at 120vw 50%);
+    clip-path: circle(120vmax at 120vw 50%);
+}
+.slide-index.s--active.s--active-prev {
+    -webkit-clip-path: circle(120vmax at 30vw 70%);
+    clip-path: circle(120vmax at 30vw 70%);
+}
+.slide__inner {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    margin-left: -50vw;
+}
+.slide__content {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    margin-left: -30px;
+    margin-top: 48px;
+    max-width: 480px;
+    color: #fff;
+}
+.slide__heading {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.slide__text {
+    font-size: 25px;
+}
+.slide__text a {
+    color: inherit;
+}
+.conversion-card .captcha{
+    max-width: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+.conversion-card .captcha img{
+    width: 100%;
+}
+.navbar-course{
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.navbar-course-child{
+    margin-left: 42%;
+}
+.navbar-course-child-green{
+    color: #439700;
+}
+.navbar-course-child-blue{
+    color: #073E75;
+}
+.header-index{
+    height: 500px;
+    overflow: hidden;
+}
+.rate-link{
+    padding-top: 8px;
+}
+.header-slider{
+    height: 100%;
+}
+@media screen and (min-width: 1920px) {
+    .navbar-course{
+        width: 300px;
+    }
+    .navbar-course-child{
+        margin-left: 48%;
+    }
+    .rate-link{
+        right: 63%;
+        width: 500px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .navbar-course{
+        width: 300px;
+    }
+    .navbar-course-child{
+        margin-left: 85%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .navbar-course{
+        width: 360px;
+    }
+    .rate-link{
+        right: 25%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .navbar-course{
+        width: 267px;
+    }
+    .rate-link{
+        right: 68%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header-slider .slider-caption-inner{
+        padding: 20px;
+    }
+    .header-slider .slider-caption h1{
+        font: 300 calc(30rem / 16) 'Roboto', sans-serif;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .nav-two .nav-link {
+        font: 500 calc(13rem / 16) 'Roboto', sans-serif;
+    }
+    .rate-link {
+        position: relative;
+        width: 450px;
+        right: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-slider .slider-caption-inner{
+        padding: 20px;
+    }
+    .header-slider .slider-caption h1{
+        font-size: calc(20rem / 16);
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+    .header-slider .slider-caption h1{
+        font: 300 calc(30rem / 16) 'Roboto', sans-serif;
+    }
+    .header-index .header-slider .slider-caption{
+        width: 100%;
+    }
+    .header-index {
+        height: 50vh;
+    }
+    .header-slider img {
+        object-fit: cover;
+    }
+}

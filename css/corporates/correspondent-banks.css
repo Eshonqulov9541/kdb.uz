@@ -1,0 +1,114 @@
+.breadcrumb-custom {
+	background-image: url('../../img/corporates/correspondent-banks/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.correspondent-banks {
+	margin-top: 48px
+}
+
+.correspondent-banks .first-parent .box {
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	padding: 24px;
+	margin: 0 0 48px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.correspondent-banks .first-parent .box i {
+	color: #FFC409;
+	font-size: 48px
+}
+
+.correspondent-banks .first-parent .box p {
+	margin: 0;
+	text-align: justify
+}
+
+.correspondent-banks h2.heading-2 {
+	margin-bottom: 24px
+}
+
+.correspondent-banks .second-parent {
+	margin: 0 0 48px
+}
+
+.correspondent-banks .second-parent .item-parent {
+	margin: 0 0 15px 0
+}
+
+.correspondent-banks .second-parent .item-parent:nth-child(10),
+.correspondent-banks .second-parent .item-parent:nth-child(11),
+.correspondent-banks .second-parent .item-parent:nth-child(12) {
+	margin: 0
+}
+
+.correspondent-banks .second-parent .item {
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	padding: 24px;
+	height: 100%
+}
+
+.correspondent-banks .second-parent .item img {
+	display: block;
+	width: 100%;
+	margin: 60px auto
+}
+
+.correspondent-banks .second-parent .item h3 {
+	color: #073E75;
+	margin: 0
+}
+
+.correspondent-banks .second-parent .item table {
+	width: 100%;
+	margin: 16px 0 0 0;
+	overflow: unset;
+}
+
+.correspondent-banks .second-parent .item tr {
+	margin: 0 0 10px 0;
+}
+
+.correspondent-banks .second-parent .item td {
+	font: 500 calc(14rem / 16)/calc(24rem / 16) 'Roboto',
+	sans-serif;
+	color: #434343;
+	width: 50%;
+	padding: 0 16px 0 0;
+	border: none;
+}
+
+.correspondent-banks .second-parent .item td:nth-child(2) {
+	font-weight: 400
+}
+
+@media(max-width:991px) {
+	.correspondent-banks .second-parent .item-parent:nth-child(10) {
+		margin: 0 0 15px
+	}
+
+}
+
+@media(max-width:767px) {
+	.correspondent-banks .second-parent .item-parent:nth-child(11),
+	.correspondent-banks .second-parent .item-parent:nth-child(12) {
+		margin: 0 0 15px
+	}
+
+}

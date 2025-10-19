@@ -1,0 +1,51 @@
+.breadcrumb-custom {
+    background-image: url('../../img/about-us/general-information/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.general-information {
+    margin-top: 48px
+}
+
+.general-information .item {
+    background-color: white;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    padding: 18px 24px;
+    border-left: 3px solid #FFC409;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.general-information .item .main {
+    font: 500 calc(14rem / 16) 'Roboto', sans-serif;
+    color: #073E75
+}
+
+.general-information .item p {
+    margin: 0
+}
+
+.general-information .item p.license {
+    margin: 0 0 16px 0
+}
+
+.general-information .item a {
+    text-decoration: none;
+    font: 400 calc(14rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    display: block
+}
+
+.general-information .item img {
+    width: 100%;
+    height: auto
+}
+
+@media screen and (max-width:767px) {
+    .general-information .row {
+        margin-left: 0;
+        margin-right: 0
+    }
+}

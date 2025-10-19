@@ -1,0 +1,29 @@
+.breadcrumb-custom {
+	background-image: url('../../img/investors/affiliate-personas/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.affiliate-personas table th:nth-child(1) {
+	min-width: 50px
+}
+
+.affiliate-personas table th:nth-child(2) {
+	min-width: 250px
+}
+
+.affiliate-personas table th:nth-child(3) {
+	min-width: 250px
+}
+
+.affiliate-personas table th:nth-child(4) {
+	min-width: 250px
+}

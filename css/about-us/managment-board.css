@@ -1,0 +1,84 @@
+.breadcrumb-custom {
+    background-image: url('../../img/about-us/managment-board/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.managment-board {
+    margin-top: 48px
+}
+
+.managment-board .heading-2 {
+    color: black;
+    margin: 0 0 24px 0
+}
+
+.managment-board .paragraph {
+    font-weight: 300;
+    color: #828282
+}
+
+.managment-board .paragraph.top {
+    margin-bottom: 24px
+}
+
+.managment-board .item {
+    margin-bottom: 24px
+}
+
+.managment-board .item:nth-child(7),
+.managment-board .item:nth-child(8),
+.managment-board .item:nth-child(9) {
+    margin-bottom: 0
+}
+
+.managment-board .card {
+    width: 100%;
+    border: 0;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    height: 100%;
+    border-radius: 0 !important
+}
+
+.managment-board h3 {
+    color: #434343
+}
+
+.managment-board .card .image {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    height: auto;
+    width: 100%
+}
+
+.managment-board .card .paragraph.bold {
+    font-weight: 500;
+    color: #434343
+}
+
+.managment-board .card .small-paragraph.bold {
+    font-weight: 500;
+    color: #434343;
+    margin-bottom: 6px
+}
+
+.managment-board .card .helper {
+    font: 400 calc(12rem / 16)/calc(18rem / 16) 'Roboto',
+    sans-serif;
+    color: #434343;
+    margin: 0 0 16px 0
+}
+
+@media(max-width:767px) {
+    .managment-board .card .image {
+        height: 589px
+    }
+
+    .managment-board .item:nth-child(7),
+    .managment-board .item:nth-child(8) {
+        margin-bottom: 24px
+    }
+}

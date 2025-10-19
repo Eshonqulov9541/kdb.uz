@@ -1,0 +1,25 @@
+.breadcrumb-custom {
+    background-image: url('../../img/investors/substantial-facts-category/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.substantial-facts-category .card-archive {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #fff;
+    -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+    color: #073E75;
+    font-size: calc(24rem / 16);
+    font-weight: 500;
+    text-decoration: none
+}

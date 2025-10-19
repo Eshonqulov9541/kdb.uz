@@ -1,0 +1,13 @@
+.breadcrumb-custom {
+    background-image: url('../../img/investors/voting-results/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}

@@ -1,0 +1,63 @@
+.breadcrumb-custom {
+	background-image: url('../../img/press-center/procurement/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.procurement {
+	margin-top: 48px
+}
+
+.procurement .first-parent h2 {
+	margin: 0 0 22px
+}
+
+.procurement .first-parent p {
+	font: 400 calc(14rem / 16)/calc(20rem / 16) 'Roboto',
+	sans-serif;
+	color: #434343;
+	margin: 0 0 24px
+}
+
+.procurement .second-parent h3 {
+	margin: 0 0 24px
+}
+
+.procurement .second-parent .item {
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	padding: 24px
+}
+
+.procurement .second-parent .item-parent {
+	margin: 0 0 24px
+}
+
+.procurement .second-parent .item-parent:last-child {
+	margin: 0
+}
+
+.procurement .email-card-title {
+	font-weight: 700;
+	margin-bottom: 24px;
+	display: block
+}
+
+.procurement .main-hero .email a {
+	color: #073E75
+}
+
+@media(max-width:767px) {
+	.procurement .second-parent .item i {
+		margin: 0 0 24px 0
+	}
+
+}

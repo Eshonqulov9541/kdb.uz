@@ -1,0 +1,27 @@
+.breadcrumb-custom {
+	background-image: url('../../img/corporates/application-for-loan/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.application-for-loan {
+	margin-top: 48px
+}
+
+.application-for-loan .email-card-title {
+	font-weight: 700;
+	margin-bottom: 24px;
+	display: block
+}
+
+.application-for-loan .main-hero .email a {
+	color: #073E75
+}

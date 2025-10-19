@@ -1,0 +1,165 @@
+.breadcrumb-custom {
+    background-image: url('../../img/about-us/ratings/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.ratings {
+    margin-top: 48px
+}
+
+.ratings .item-inner {
+    width: 100%;
+    height: calc(100% - 6px);
+    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .16);
+    margin: 12px;
+    padding: 0;
+    cursor: pointer;
+    background-color: white
+}
+
+.ratings .item-inner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 100px
+}
+
+.ratings .global-modal-window {
+    overflow-x: hidden
+}
+
+.ratings .global-modal-content {
+    max-width: 1133px;
+    padding: 48px
+}
+
+.ratings .modal-content-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.ratings .global-modal-content img {
+    width: 100%
+}
+
+.ratings .global-modal-content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    max-width: 227px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    margin-right: 15px
+}
+
+.ratings .global-modal-content ul li {
+    width: 100%
+}
+
+.ratings .global-modal-content ul li button {
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #9D9D9D;
+    padding: 16px 22.5px;
+    color: #262626;
+    position: relative;
+    text-transform: uppercase;
+    font: 500 calc(14rem / 16) 'Roboto', sans-serif
+}
+
+.ratings .global-modal-content ul li button:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #073E75;
+    left: 0;
+    top: 0;
+    visibility: hidden
+}
+
+.ratings .global-modal-content ul li button:hover,
+.ratings .global-modal-content ul li button:focus,
+.ratings .global-modal-content ul li button:active,
+.global-modal-content ul li button.active {
+    outline: none;
+    background-color: #FFC409
+}
+
+.ratings .global-modal-content ul li button:hover:before,
+.ratings .global-modal-content ul li button:focus:before,
+.ratings .global-modal-content ul li button:active:before,
+.global-modal-content ul li button.active:before {
+    visibility: visible
+}
+
+@media (max-width:1200px) {
+    .ratings .global-modal-content {
+        max-width: 800px;
+        padding: 32px
+    }
+}
+
+@media (max-width:992px) {
+    .ratings .global-modal-content {
+        max-width: 700px;
+        padding: 16px
+    }
+
+    .ratings .global-modal-content ul {
+        max-width: 200px;
+        margin-right: 15px
+    }
+}
+
+@media (max-width:768px) {
+    .ratings .global-modal-content {
+        width: 100%
+    }
+
+    .ratings .modal-content-inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .ratings .global-modal-content ul {
+        max-width: 100%;
+        margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow-x: scroll;
+        margin-bottom: 24px
+    }
+
+    .ratings .global-modal-content ul::-webkit-scrollbar {
+        height: 5px
+    }
+
+    .ratings .global-modal-content ul::-webkit-scrollbar-thumb {
+        background: #C4C4C4
+    }
+
+    .ratings .global-modal-content ul li button {
+        display: inline-block;
+        border: 1px solid #9D9D9D;
+        padding: 4px 16px;
+        font: 500 calc(14rem / 16) 'Roboto', sans-serif
+    }
+
+    .ratings .global-modal-content ul li button span {
+        display: block;
+        white-space: nowrap
+    }
+}

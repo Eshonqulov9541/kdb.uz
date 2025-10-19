@@ -1,0 +1,88 @@
+.breadcrumb-custom {
+    background-image: url('../../img/interactive-services/bank-regulations/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.bank-regulations {
+    margin-top: 48px
+}
+
+.bank-regulations .first-parent .box {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    padding: 24px;
+    border-left: 2px solid #FFC409;
+    margin: 0 0 48px
+}
+
+.bank-regulations .first-parent .box:last-child {
+    margin: 0
+}
+
+.bank-regulations .first-parent .box h6 {
+    font: 500 calc(14rem / 16)/calc(20rem / 16) 'Roboto', sans-serif;
+    color: #073E75;
+    margin: 0 0 8px
+}
+
+.bank-regulations .first-parent .box .helper-paragraph {
+    font: 400 calc(12rem / 16)/calc(20rem / 16) 'Roboto', sans-serif;
+    color: #434343;
+    margin: 0;
+    text-decoration: none
+}
+
+.bank-regulations .first-parent .box .right-parent .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 32px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.bank-regulations .first-parent .box .right-parent .top a {
+    font: 500 calc(14rem / 16)/calc(20rem / 16) 'Roboto', sans-serif;
+    color: #073E75;
+    text-decoration: none
+}
+
+.bank-regulations .first-parent .box .right-parent .top a i {
+    color: #FFC409;
+    font-size: calc(16rem / 16);
+    margin: 0 0 0 48px
+}
+
+.bank-regulations .first-parent .box .right-parent p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+@media(max-width:575px) {
+    .bank-regulations .first-parent .box .right-parent .top {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-top: 12px
+    }
+
+    .bank-regulations .first-parent .box .right-parent p {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}

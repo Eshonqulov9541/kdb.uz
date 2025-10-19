@@ -1,0 +1,207 @@
+.breadcrumb-custom {
+    background-image: url('../../img/about-us/history/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.history {
+    margin-top: 48px
+}
+
+.history .align-right {
+    float: right;
+    width: 50% !important;
+    height: auto;
+    margin-left: 16px
+}
+
+.history .history-content {
+    margin-bottom: 48px
+}
+
+.history p {
+    margin-bottom: 24px
+}
+
+.history .history-video {
+    position: relative;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16)
+}
+
+.history .history-video i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: calc(64rem / 16);
+    color: white;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s
+}
+
+.history .history-video:hover i {
+    color: #FFC409;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s
+}
+
+.history-evolution-box {
+    margin-left: 80px
+}
+
+.history .history-evolution {
+    position: relative;
+    padding-bottom: 48px;
+    padding-left: 48px
+}
+
+.history .history-evolution-inner {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    background-color: white;
+    min-height: 123px;
+    width: 100%;
+    position: relative
+}
+
+.history .history-evolution:before {
+    content: "";
+    position: absolute;
+    right: calc(100% + 28px);
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: rgba(255, 196, 9, .5)
+}
+
+.history-evolution.botton {
+    padding-bottom: 0
+}
+
+.history .history-evolution p {
+    color: #262626;
+    padding: 30px 48px;
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+.history .history-evolution-date {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FFC409;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white
+}
+
+.history .clear {
+    position: absolute;
+    width: 40px;
+    height: 50%;
+    background-color: white;
+    z-index: 2;
+    right: 102%
+}
+
+.history .clear-top {
+    top: 0
+}
+
+.history .clear-bottom {
+    bottom: 0
+}
+
+.history .kdb-structure {
+    padding: 48px
+}
+
+.history .kdb-structure h2 {
+    color: #073E75;
+    text-align: center;
+    margin-bottom: 24px
+}
+
+.history .kdb-structure img {
+    width: 100%;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+@media (max-width:768px) {
+    .history .history-content {
+        padding: 0
+    }
+
+    .history .kdb-structure {
+        padding: 32px 0
+    }
+
+    .history-evolution-box {
+        margin-left: 0;
+        margin-top: 138px
+    }
+
+    .history .history-evolution-inner {
+        min-height: auto
+    }
+
+    .history .history-evolution {
+        padding-left: 0;
+        padding-bottom: 138px
+    }
+
+    .history .history-evolution:before {
+        top: -10%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+        right: 50%;
+        width: 3px;
+        height: 100%
+    }
+
+    .history .history-evolution.botton {
+        padding-bottom: 0
+    }
+
+    .history .history-evolution-date {
+        right: 50%;
+        top: auto;
+        bottom: 100%;
+        -webkit-transform: translate(50%, -20%);
+        -ms-transform: translate(50%, -20%);
+        transform: translate(50%, -20%)
+    }
+
+    .history .history-evolution p {
+        padding: 20px 32px;
+        font-size: calc(18rem / 16)
+    }
+}

@@ -1,0 +1,134 @@
+.breadcrumb-custom {
+    background-image: url('../../img/individuals/payments-and-transfers/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.payments-and-transfers {
+    margin-top: 48px
+}
+
+.mb-24 {
+    margin-bottom: 24px !important
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 6px 12px #00000029;
+    box-shadow: 0px 6px 12px #00000029
+}
+
+.payments-and-transfers .service_video {
+    position: relative;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16)
+}
+
+.payments-and-transfers .service_video i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: calc(64rem / 16);
+    color: white;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s
+}
+
+.payments-and-transfers .service_video:hover i {
+    color: #FFC409;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s
+}
+
+.payments-and-transfers .process_descr .descr_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px
+}
+
+.payments-and-transfers .process_descr .process_item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 24px
+}
+
+.payments-and-transfers .process_descr .process_item h4 span {
+    color: #FFC409;
+    font: 700 calc(24rem / 16) 'Roboto', sans-serif
+}
+
+.payments-and-transfers .currency_item {
+    padding: 24px;
+    display: block;
+    margin-bottom: 16px
+}
+
+.payments-and-transfers .currency_item:hover {
+    text-decoration: none
+}
+
+.payments-and-transfers .currency_item strong {
+    color: #FFB600;
+    text-transform: uppercase;
+    font-size: calc(24rem / 16);
+    vertical-align: middle
+}
+
+.payments-and-transfers .currency_item span {
+    font-size: calc(14rem / 16);
+    color: #434343;
+    margin-left: 50px
+}
+
+.payments-and-transfers .currency .exotic-currencies {
+    font: 700 calc(20rem / 16) 'Roboto', sans-serif;
+    color: #FFC409;
+    text-transform: uppercase
+}
+
+.payments-and-transfers .contact {
+    padding: 20px
+}
+
+.payments-and-transfers .contact_info strong {
+    display: block
+}
+
+.payments-and-transfers .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.payments-and-transfers .contact span {
+    margin-left: 38px;
+    color: #073E75
+}
+
+.payments-and-transfers .contact .phone-number {
+    text-decoration: none;
+    font: 500 calc(16rem / 16)/calc(24rem / 16) 'Roboto', sans-serif
+}
+
+@media(max-width:1200px) {
+    .payments-and-transfers .contact span {
+        margin-left: 20px;
+        font-size: calc(13rem / 16)
+    }
+}
+
+@media(max-width:992px) {
+    .payments-and-transfers .contact span {
+        margin-left: 38px;
+        font-size: calc(16rem / 16)
+    }
+}

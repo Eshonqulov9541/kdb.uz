@@ -1,0 +1,98 @@
+.breadcrumb-custom {
+	background-image: url('../../img/corporates/accaunt-opening/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.accaunt-opening {
+	margin-top: 48px
+}
+
+.accaunt-opening .first-stuff {
+	margin: 0 0 48px 0
+}
+
+.accaunt-opening .heading-2 {
+	font-weight: 300;
+	margin: 0 0 24px
+}
+
+.accaunt-opening .item {
+	margin-top: 24px
+}
+
+.accaunt-opening img {
+	width: 100%
+}
+
+.accaunt-opening .heading-black {
+	font: 500 24px 'Roboto', sans-serif;
+	color: #434343;
+	margin: 16px 0
+}
+
+.accaunt-opening p.small-paragraph {
+	color: #434343;
+	margin-bottom: 0
+}
+
+.accaunt-opening .paragraph-bold {
+	font-weight: 500
+}
+
+.accaunt-opening .download {
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	padding: 18px 24px;
+	border-left: 3px solid #FFC409;
+	margin: 0 0 16px 0
+}
+
+.accaunt-opening .download a {
+	text-decoration: none
+}
+
+.accaunt-opening .download .information h6 {
+	font: 500 14px/20px 'Roboto', sans-serif;
+	color: #073E75;
+	margin: 0
+}
+
+.accaunt-opening .download .icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	font-size: 16px;
+	color: #FFC409
+}
+
+@media(max-width:991px) {
+	.accaunt-opening .shadow-div {
+		margin-right: 0;
+		margin-bottom: 24px
+	}
+
+	.accaunt-opening .btn-download {
+		margin-bottom: 24px
+	}
+
+}
+
+.accaunt-opening a.mydiv {
+	text-decoration: none;
+}
+
+.accaunt-opening a.mydiv:hover h6 {
+	color: #073E75;
+}

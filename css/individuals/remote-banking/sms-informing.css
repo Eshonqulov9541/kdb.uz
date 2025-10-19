@@ -1,0 +1,42 @@
+.breadcrumb-custom {
+    background-image: url('../../../img/individuals/remote-banking/sms-informing/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.sms-informing {
+    margin-top: 48px
+}
+
+.global-modal-window .global-modal-content {
+    max-width: 1200px
+}
+
+.modal-content-inner .item {
+    background-color: white;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+    padding: 18px 24px;
+    border-left: 3px solid #FFC409;
+    margin-left: 0;
+    margin-bottom: 16px;
+    width: 100%
+}
+
+.modal-content-inner .item .main {
+    font: 500 calc(14rem / 16) 'Roboto',
+    sans-serif;
+    color: #073E75
+}
+
+.modal-content-inner .item p {
+    margin: 0
+}

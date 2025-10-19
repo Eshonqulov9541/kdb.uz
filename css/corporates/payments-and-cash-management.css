@@ -1,0 +1,30 @@
+.breadcrumb-custom {
+    background-image: url('../../img/corporates/payments-and-cash-management/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.payments-and-cash-management {
+    margin-top: 48px
+}
+
+.payments-and-cash-management .align-left {
+    float: left;
+    width: 50% !important;
+    height: auto;
+    margin-right: 16px
+}
+
+@media (max-width:768px) {
+    .payments-and-cash-management .align-left {
+        width: 100% !important
+    }
+}

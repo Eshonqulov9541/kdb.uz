@@ -1,0 +1,60 @@
+.breadcrumb-custom {
+	background-image: url('../../../img/individuals/remote-banking/mobile-banking/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.breadcrumb-custom {
+	color: white
+}
+
+.breadcrumb-custom a {
+	color: #F5F5F5
+}
+
+.mobile-banking {
+	margin-top: 48px
+}
+
+.mobile-banking .mobile-banking-video {
+	position: relative;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .16)
+}
+
+.mobile-banking .mobile-banking-video i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: calc(64rem / 16);
+	color: white;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s
+}
+
+.mobile-banking .mobile-banking-video:hover i {
+	color: #FFC409;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s
+}
+
+.mobile-banking .multipay-desc {
+	background-color: #073E75;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 24px;
+	color: white
+}
+
+.mobile-banking .app-link {
+	width: 120px;
+}

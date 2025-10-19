@@ -1,0 +1,224 @@
+/* Virtual Reception Starts -----*/
+.breadcrumb-custom {
+     background-image: url('../../img/interactive-services/virtual-reception/background.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.breadcrumb-custom {
+     color: white;
+}
+
+.breadcrumb-custom a {
+     color: #F5F5F5;
+}
+
+.virtual-reception {
+     margin-top: 48px;
+}
+
+.virtual-reception .first-parent .item {
+     box-shadow: 0 6px 12px rgba(0, 0, 0, .16);
+     padding: 24px;
+}
+
+.virtual-reception .first-parent .item h2 {
+     margin: 0 0 35px;
+}
+
+.virtual-reception .first-parent .item fieldset {
+     margin: 0 0 24px;
+}
+
+.virtual-reception .first-parent .item fieldset label {
+     font: 400 14px/20px 'Roboto', sans-serif;
+     color: #262626;
+     margin: 0 0 8px 16px;
+}
+
+.virtual-reception .first-parent .item fieldset label.text::after {
+     content: "*:";
+     color: #FFC409;
+     font: 400 14px 'Roboto', sans-serif;
+}
+
+.virtual-reception .first-parent .item fieldset .main-input {
+     width: 100%;
+     border: 2px solid #BFCCDF;
+     font: 400 14px/20px 'Roboto', sans-serif;
+     color: rgba(0, 0, 0, .5);
+     padding: 12px 16px;
+}
+
+.virtual-reception .first-parent .item fieldset .main-input::placeholder {
+     font: 400 14px/20px 'Roboto', sans-serif;
+     color: rgba(0, 0, 0, .5);
+}
+
+.virtual-reception .first-parent .item fieldset .main-input:focus {
+     outline: none;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload {
+     display: block;
+     text-align: center;
+     font: 400 12px/20px 'Roboto', sans-serif;
+     text-transform: uppercase;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select {
+     display: block;
+     border: 2px solid #FFC409;
+     color: #34495e;
+     cursor: pointer;
+     height: 40px;
+     line-height: 40px;
+     text-align: left;
+     background: #FFFFFF;
+     overflow: hidden;
+     position: relative;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select .file-select-button {
+     background: #FFC409;
+     padding: 0 10px;
+     display: inline-block;
+     height: 40px;
+     line-height: 40px;
+     color: white;
+     cursor: pointer;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select .file-select-name {
+     line-height: 40px;
+     display: inline-block;
+     padding: 0 10px;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select:hover {
+     border-color: #34495e;
+     transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     -webkit-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select:hover .file-select-button {
+     background: #34495e;
+     color: #FFFFFF;
+     transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     -webkit-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload.active .file-select {
+     border-color: #073E75;
+     transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     -webkit-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload.active .file-select .file-select-button {
+     background: #073E75;
+     color: #FFFFFF;
+     transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     -webkit-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select input[type=file] {
+     z-index: 100;
+     cursor: pointer;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     opacity: 0;
+     filter: alpha(opacity = 0);
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select.file-select-disabled {
+     opacity: 0.65;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select.file-select-disabled:hover {
+     cursor: default;
+     display: block;
+     border: 2px solid #FFC409;
+     color: #34495e;
+     cursor: pointer;
+     height: 40px;
+     line-height: 40px;
+     margin-top: 5px;
+     text-align: left;
+     background: #FFFFFF;
+     overflow: hidden;
+     position: relative;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select.file-select-disabled:hover .file-select-button {
+     background: #FFC409;
+     color: #666666;
+     padding: 0 10px;
+     display: inline-block;
+     height: 40px;
+     line-height: 40px;
+}
+
+.virtual-reception .first-parent .item fieldset .file-upload .file-select.file-select-disabled:hover .file-select-name {
+     line-height: 40px;
+     display: inline-block;
+     padding: 0 10px;
+}
+
+.virtual-reception .first-parent .item .send-button {
+     background-color: #073E75;
+     color: white;
+}
+
+.virtual-reception .first-parent .item .send-button:hover {
+     background-color: #4C71A4;
+}
+
+.virtual-reception .first-parent .item .send-button:focus {
+     outline: none;
+}
+
+.virtual-reception .first-parent .item .helper-text {
+     font: 300 12px/20px 'Roboto', sans-serif;
+     color: #262626;
+     margin: 0 0 24px;
+}
+
+@media(max-width:991px) {
+     .virtual-reception .first-parent .item-parent {
+          margin-bottom: 48px;
+     }
+
+     .virtual-reception .first-parent .item-parent:last-child {
+          margin-bottom: 0;
+     }
+
+}
+
+/* Virtual Reception Ends -----*/
+
+.success-message .global-modal-window {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.success-message .global-modal-content {
+     max-width: 800px;
+     padding: 48px 32px;
+     transform: translateY(-24px);
+}
+
+.success-message .modal-content-inner {
+     background-color: white;
+}

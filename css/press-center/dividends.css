@@ -1,0 +1,50 @@
+.breadcrumb-custom {
+    background-image: url('../../img/press-center/dividends/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.breadcrumb-custom {
+    color: white
+}
+
+.breadcrumb-custom a {
+    color: #F5F5F5
+}
+
+.dividends table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap
+}
+
+table::-webkit-scrollbar {
+    height: 8px
+}
+
+table::-webkit-scrollbar-thumb {
+    background: #073E75
+}
+
+.dividends table th,
+.dividends table td {
+    border: 1px solid #BFCCDF;
+    padding: 18px 24px;
+    white-space: normal
+}
+
+.dividends table th:nth-child(1) {
+    min-width: 200px
+}
+
+.dividends table th:nth-child(2) {
+    min-width: 200px
+}
+
+.dividends table th:nth-child(3) {
+    min-width: 200px
+}
+
+.dividends table th:nth-child(4) {
+    min-width: 200px
+}

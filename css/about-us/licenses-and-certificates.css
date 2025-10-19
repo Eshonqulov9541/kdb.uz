@@ -1,0 +1,63 @@
+.breadcrumb-custom {
+    background-image: url('../../img/about-us/licenses-and-certificates/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.licenses-and-certificates {
+    margin-top: 48px
+}
+
+.licenses-and-certificates .item-inner {
+    width: 100%;
+    height: calc(100% - 6px);
+    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .16);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .16);
+    margin: 12px;
+    padding: 32px;
+    cursor: pointer;
+    background-color: white
+}
+
+.licenses-and-certificates .global-modal-content {
+    max-width: 550px
+}
+
+.licenses-and-certificates .main-hero .item-inner img {
+    width: 100%;
+    display: block
+}
+
+.licenses-and-certificates .global-modal-content img {
+    width: 100%
+}
+
+.licenses-and-certificates .main-hero .small img {
+    width: 70%
+}
+
+.licenses-and-certificates .global-modal-content h5 {
+    color: #073E75;
+    font-weight: 500;
+    margin: 22px 0 6px 0
+}
+
+.licenses-and-certificates .global-modal-content p {
+    color: #434343;
+    font-weight: 500;
+    margin-bottom: 14px
+}
+
+@media (max-width:1200px) {
+    .licenses-and-certificates .global-modal-content {
+        max-width: 400px
+    }
+
+    .licenses-and-certificates .global-modal-content h5 {
+        margin: 6px 0 6px 0
+    }
+
+    .licenses-and-certificates .global-modal-content p {
+        margin-bottom: 8px
+    }
+}
